@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#0693e3;
+    font-size: 42px;      
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#0693e3;
+    font-size: 26px;      
+    padding: 10px; 
+
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#eca819;
+    font-size: 16px;     
+    padding: 10px; 
+
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#0693e3;
+    font-size: 18px;      
+    padding: 10px; 
+}
+
+h5{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#0693e3;
+    font-size: 15px;    
+    padding: 10px;  
+
+}
+
+
+h6{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#0693e3;
+    font-size: 13px;      
+    padding: 10px; 
+    
+}
+
+#productos{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#0693e3;
+    font-size: 13px;      
+    padding: 10px; 
+    border-radius: 10px;
+    
+
+}
+
+#formulario{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 18px;      
+    padding: 10px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    background-color:lightblue;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10;
+    text-align: center; 
+         
+}
+
+.header {
+    grid-area: header;
+    background-color: white;   
+    padding: 10px;
+    
+    
+}
+
+.navbar {
+    grid-area: navbar;
+    text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:blue;
+    background-color: white;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: white;
+}
+
+.main{
+    grid-area: main;
+    background-color: rgb(74,234,220) 5%;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: white;
+}
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template:  /*celular.*/
+        "header"  80px
+        "navbar"  auto 
+        "main"    auto
+        "sidebar" auto
+        "footer"  100px;
+}
+
+@media (min-width: 600px){
+    .grid-container {
+        grid-template:  /*tablet.*/
+            "header  header" 80px
+            "navbar  navbar" auto 
+            "sidebar main"   auto
+            "footer  footer" 100px /
+            200px    auto;      
+    }
+}
+
+@media (min-width: 900px){
+    .grid-container {
+        grid-template:  /*desktop.*/
+            "header  header  header"  80px
+            "navbar  main    sidebar" auto
+            "footer  footer  footer"  100px /
+            100px    auto    200px;      
+    }
+}
+
+
+
+.tarjeta{
+    background-color: white;
+    width: 250px ;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px lightblue;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    /*align-content: space-around;
+    height: 100%;*/
+
+}
+
+
